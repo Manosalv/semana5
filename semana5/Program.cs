@@ -29,7 +29,7 @@ namespace semana5
             Console.ReadKey();
             */
 
-            // Hallar la suma de los cubos en los n numeros naturales
+            /*// Hallar la suma de los cubos en los n numeros naturales
             int n, sumacubos;
             Console.WriteLine("Numero de elementos: ");
             n = int.Parse(Console.ReadLine());
@@ -41,22 +41,67 @@ namespace semana5
                 sumacubos = sumacubos + (i * i * i);
             }
             Console.WriteLine("La suma de los cuadrados es: " + sumacubos);
+            */
+
+            /* // Hallar la suma de los n primeros numeros naturales pares
+             int n1, sumapares;
+             Console.WriteLine("Ingrese numeros de los elementos: ");
+             n1 = int.Parse(Console.ReadLine());
+             sumapares = 0;
+
+             for (int i = 1; i <= n1; i ++1) ;
+             {
+                 Console.WriteLine("hola");
+            */
+            /*//mostrar los numeros
+            //del 1 al 10
+            int n;
+            Console.WriteLine("Ingrese numeros del 1 al 10");
+
+
+            for (int i = 1; i <= 10; i++) 
+            {
+                Console.WriteLine(i);
+            */
+            {
+                
+                int num;
+                int suma=0;
+                Console.WriteLine("Ingrese numero: ");
+                num = int.Parse(Console.ReadLine());
+
+                for (int x = 1; x < num; x++) 
+                {
+                    //mod => %
+                    if (num % x == 0)
+                    {
+                        //aqui
+                        //Console.WriteLine(x);
+                        suma = suma + x;
+                    }
+                    Console.WriteLine("suma:"+ suma);
+                    if (num==suma)
+                    {
+                        Console.WriteLine("si es perfecto");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("No es perfecto");
+                    }
+                }
             
 
-            // Hallar la suma de los n primeros numeros naturales pares
-            int n1, sumapares;
-            Console.WriteLine("Ingrese numeros de los elementos: ");
-            n1 = int.Parse(Console.ReadLine());
-            sumapares = 0;
+            
 
-            for (int i = 1; i <= n1; i ++1) ;
-            {
-                Console.WriteLine("hola");
 
             }
-            
+        }
+       
+        
 
 
         }
     }
-}
+
+
